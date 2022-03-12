@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RT PIZZA</title>
+    <link rel="stylesheet" href="github.com/necolas/normalize.css">
+    <link rel="stylesheet" href="asserts/css/styles/styles.css">
+
+
+</head>
+<body>
+<header id="header-content">
+    <div>
+        <h1 class="logo"><img src="https://www.animatedimages.org/data/media/298/animated-eat-and-drink-image-0400.gif" alt="" id="logoIMG">Food</h1>
+    </div>
+    <div class="nav-bar">
+        <ul>
+            <li><a href="#" id="link-Home">Home</a></li>
+            <li><a href="#" id="link-Customer">Customer</a></li>
+            <li><a href="#" id="link-Item">Item</a></li>
+            <li><a href="#" id="link-Order">Order</a></li>
+        </ul>
+    </div>
+</header>
+
+<section class="home" id="home-content">
+    <div class="content">
+        <div class="offers">
+            <div class="todaySpecial">
+                <h1>Today's Special</h1>
+                <aside>RS.2500/=</aside>
+                <img src="asserts/images/pizza01.PNG" alt="">
+                <img src="asserts/images/pizza02.PNG" alt="">
+                <img src="asserts/images/pizza03.PNG" alt="">
+
+
+            </div>
+            <div class="promotions">
+                <h1 class="topic">Offers</h1>
+                <div>
+                    <aside>RS.999/= Only</aside>
+                    <img src="asserts/images/pizza01.PNG" alt="">
+
+                </div>
+                <div>
+                    <aside>RS.1299/=  Only</aside>
+                    <img src="asserts/images/pizza02.PNG" alt="">
+
+                </div>
+                <div>
+                    <aside>RS.1499/=  Only</aside>
+                    <img src="asserts/images/pizza03.PNG" alt="">
+
+                </div>
+
+            </div>
+        </div>
+        <div class="flex-container">
+            <div class="allCustomers">
+                <aside><img src="asserts/images/homeImg1.png" alt="" ></aside>
+                <h1>Customers</h1>
+                <div>50</div>
+            </div>
+            <div class="allItems">
+                <aside><img src="asserts/images/homeImg2.png" alt="" ></aside>
+                <h1>Items</h1>
+                <div>50</div>
+            </div>
+            <div class="allOrders">
+                <img src="asserts/images/homeImg3.png" alt="" >
+                <h1>Orders</h1>
+                <div>50</div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="customer" id="customer-content">
+    <div class="search-container">
+        <h1>Search Here..</h1>
+        <input type="text" placeholder="Customer ID (Ex:C00-001)" id="txtSearchCusID">
+        <div id="altSearchId"></div>
+        <button type="submit" id="btnSearchCustomer" class="btnSearch" >Search</button>-->
+    </div>
+
+    <div class="form-container">
+        <div>
+            <h1>Customer ID</h1>
+            <input type="text" placeholder="Customer ID" id="txtCusID">
+            <div id="altCusID"></div>
+        </div>
+
+        <div>
+            <h1>Customer Name</h1>
+            <input type="text" placeholder="Customer Name" id="txtCusName">
+            <div id="altCusName" ></div>
+        </div>
+
+        <div>
+            <h1>Customer Address</h1>
+            <input type="text" placeholder="Customer Address" id="txtCusAddress">
+            <div id="altCusAddress"></div>
+        </div>
+
+        <div>
+            <h1>Customer Contact</h1>
+            <input type="text" placeholder="Customer Contact" id="txtCusContact">
+            <div id="altCusContact"></div>
+        </div>
+
+        <div class="btn-container">
+            <button id="btnDeleteCustomer" class="btnDelete">Delete</button>
+            <button type="submit" id="btnSaveCustomer" class="btnSave">Save & Update</button>
+        </div>
+    </div>
+
+    <div class="table-container">
+        <table class="table">
+            <thead>
+            <tr>
+                <th id="t">Id</th>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Contact</th>
+            </tr>
+            </thead>
+            <tbody id="cusTable">
+
+
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section class="item" id="item-content">
+    <div class="search-container">
+        <h1>Search Here..</h1>
+        <input type="text" placeholder="Customer ID (Ex:I00-001)" id="txtSearchItemCode">
+        <div id="altSearchItemCode"></div>
+        <button id="btnSearchItem" class="btnSearch">Search</button>
+    </div>
+
+    <div class="form-container">
+        <div>
+            <h1>Item Code</h1>
+            <input type="text" placeholder="Item Code" id="txtItemCode">
+            <div id="altItemCode"></div>
+        </div>
+
+        <div>
+            <h1>Item Name</h1>
+            <input type="text" placeholder="Item Name" id="txtItemName">
+            <div id="altItemName" ></div>
+        </div>
+
+        <div>
+            <h1>Item Size</h1>
+            <input type="text" placeholder="Item Size" id="txtQuantity">
+            <div id="altQuantity"></div>
+        </div>
+
+        <div>
+            <h1>Price(LKR)</h1>
+            <input type="text" placeholder="Price" id="txtPrice">
+            <div id="altPrice"></div>
+        </div>
+
+        <div class="btn-container">
+            <button id="btnDeleteItem" class="btnDelete">Delete</button>
+            <button id="btnSaveItem" class="btnSave">Save & Update</button>
+        </div>
+    </div>
+
+    <div class="table-container">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Item Code</th>
+                <th>Item Name</th>
+                <th>Item Size</th>
+                <th>Unit Price</th>
+            </tr>
+            </thead>
+            <tbody id="itemTable">
+
+
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section class="order" id="order-content">
+    <div class="search-content">
+        <h2>Order ID</h2>
+        <input type="text" placeholder="Order Id" id="searchedOderId">
+        <button id="searchOrderIdBtn">Search</button>
+    </div>
+    <div class="invoice-details">
+        <h1>Invoice Details</h1>
+        <div>
+            <h2>Order ID</h2>
+            <div id="cmbOrderID"></div>
+        </div>
+
+        <div>
+            <h2>Date</h2>
+            <div id="txtDate"></div>
+        </div>
+
+        <div>
+            <h2>Customer ID</h2>
+            <div id="cusIdDiv">
+                <select id="selectedCusID">
+
+                </select>
+            </div>
+        </div>
+
+        <div>
+            <h2>Customer Name</h2>
+            <div id="lblCusName">Customer Name</div>
+
+        </div>
+    </div>
+
+    <div class="item-select">
+        <h1>Item Select</h1>
+
+        <div>
+            <h2>Item Code</h2>
+            <div id="itemCodeDiv">
+                <select id="selectedItemCode">
+
+                </select>
+            </div>
+        </div>
+
+        <div>
+            <h2>Item Name</h2>
+            <div id="lblItemName">Item Name</div>
+        </div>
+
+        <div class="qty">
+            <div>
+                <h2>Quantity</h2>
+                <input type="number" placeholder="Quantity" id="txtQty">
+            </div>
+            <button id="addItem">Add Item</button>
+        </div>
+
+    </div>
+    <div class="payment-details">
+        <h1>Payement Details</h1>
+        <div>
+            <h2>Total(LKR)</h2>
+            <div id="total">0.00</div>
+        </div>
+        <div>
+            <h2>Cash(LKR)</h2>
+            <input type="text" placeholder="0.0" id="txtCash">
+
+        </div>
+        <div>
+            <h2>Balance(LKR)</h2>
+            <div id="balance">0.0</div>
+        </div>
+        <aside></aside>
+        <button id="confirm">Confirm</button>
+    </div>
+    <div class="table-details">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Item Code</th>
+                <th>Item</th>
+                <th>Qty</th>
+                <th>Price(LKR)</th>
+            </tr>
+            </thead>
+            <tbody id="orderTable">
+
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<script src="asserts/jQuery/jquery-3.6.0.min.js"></script>
+
+<script src="db/DB.js"></script>
+
+<script src="controller/CustomerController.js"></script>
+<script src="controller/ItemController.js"></script>
+<script src="controller/OrderController.js"></script>
+<script src="controller/HomeController.js"></script>
+
+<script src="model/CustomerDTO.js"></script>
+<script src="model/ItemDTO.js"></script>
+<script src="model/OrderDTO.js"></script>
+<script src="model/OrderDetailDTO.js"></script>
+
+
+<script>
+
+    $("#home-content").css("display","flex");
+    $("#customer-content").css("display","none");
+    $("#item-content").css("display","none");
+    $("#order-content").css("display","none");
+    $('#theme').text("Home");
+
+    $("#link-Customer").click(function (){
+      $("#customer-content").css("display","flex");
+      $("#home-content").css("display","none");
+      $("#item-content").css("display","none");
+      $("#order-content").css("display","none");
+      $('#theme').text("Customer");
+    });
+
+    $("#link-Item").click(function (){
+       $("#item-content").css("display","flex");
+       $("#customer-content").css("display","none");
+       $("#home-content").css("display","none");
+       $("#order-content").css("display","none");
+       $('#theme').text("Item");
+    });
+
+    $("#link-Home").click(function (){
+       $("#home-content").css("display","flex");
+       $("#item-content").css("display","none");
+       $("#customer-content").css("display","none");
+       $("#order-content").css("display","none");
+       $('#theme').text("Home");
+    });
+
+    $("#link-Order").click(function (){
+       $("#order-content").css("display","flex");
+       $("#home-content").css("display","none");
+       $("#item-content").css("display","none");
+       $("#customer-content").css("display","none");
+       $('#theme').text("Order");
+    });
+    $("#link-Order").click(function (){
+        loadCusID();
+        loadItemCode();
+    });
+</script>
+</body>
+</html>

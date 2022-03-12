@@ -1,0 +1,906 @@
+*{
+  font-family:fantasy;
+  margin:0; padding:0;
+  box-sizing:border-box;
+  outline:none; border:none;
+  text-decoration:none;
+  text-transform:capitalize;
+  transaction:all .2s linear ;
+}
+
+html{
+   font-size:62.5%;
+   overflow-x:hidden;
+   scroll-behavior:smooth;
+   scroll-padding-top:6rem;
+}
+
+body{
+   background:#f7f7f7;
+
+}
+
+section{
+    padding-top: 16rem;
+
+}
+
+/* -------------------------------------------------Header CSS---------------------------------------------- */
+header{
+   position:fixed;
+   top:0; left:0; right:0;
+   z-index:1000;
+   display:flex;
+   align-item:center;
+   justify-content:space-between;
+   background:#fff;
+   padding:1rem 9%;
+   box-shadow:0 .5rem 1rem rgba(0,0,0,.1)
+}
+
+header .logo{
+   font-size:3rem;
+   font-weight:bolder;
+   color:#ed2929;
+   display:flex;
+   margin-top:0;
+   margin-right:12rem;
+   padding-right:5rem;
+}
+
+header .logo i{
+    padding-right:.5rem;
+    color:#ff0000;
+}
+
+header .nav-bar{
+    font-size:2.5rem;
+    margin: 0rem 2rem 0rem 0rem;
+    color:#666;
+    display:flex;
+}
+
+header .nav-bar ul{
+    display:flex;
+    list-style:none;
+}
+
+header .nav-bar ul li{
+    padding-left:2rem;
+
+}
+
+header .nav-bar ul li a:hover{
+    color:--red:#ff3838;
+
+}
+
+/*#theme{
+    display:block;
+    font-size:2rem;
+    padding:1rem;
+    padding-right:10rem;
+    font-weight: bold;
+    font-family:'Font Awesome 5 Free';
+    border:1px solid #1cd01c;
+    background-color:#1cd01c;
+    color:white;
+    border-radius:1rem;
+}*/
+/* -------------------------------------------------Home CSS--------------------------------------------------------- */
+.home{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1.5rem;
+    min-height:80vh;
+    align-content:top;
+    background-size:cover;
+    background-position:top;
+    //margin:2rem;
+    margin-top:4rem;
+    padding:2rem;
+}
+.content{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1.5rem;
+    min-height:80vh;
+    align-content:top;
+    background-size:cover;
+    background-position:top;
+    margin:2rem;
+    margin-top:2rem;
+    //background-color:blue;
+    width:100vw;
+}
+.content .offers{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1rem;
+    flex: 1 1 60rem;
+    //background-color:green;
+}
+.content .flex-container{
+    display:flex;
+    flex-wrap:wrap;
+    flex: 1 1 60rem;
+    //background-color:yellow;
+}
+.content .offers .todaySpecial{
+    flex: 1 1 10rem;
+}
+.content .offers .promotions{
+    flex: 1 1 10rem;
+}
+.content .offers .todaySpecial{
+    background-color:white;
+    width:30rem;
+    margin:2rem;
+    padding:1rem;
+}
+.content .offers .todaySpecial h1{
+    font-size:2.5rem;
+    background-color:chocolate;
+    padding:1rem;
+    border-radius:1rem;
+    color:white;
+    font-family:cursive;
+}
+.content .offers .todaySpecial img:nth-child(3){
+    width:26rem;
+    height:16rem;
+    margin:1rem;
+    border-radius:1rem;
+}
+.content .offers .todaySpecial img:nth-child(4){
+    width:12rem;
+    height:12rem;
+    margin:1rem;
+    border-radius:1rem;
+}
+.content .offers .todaySpecial img:nth-child(5){
+    width:12rem;
+    height:12rem;
+    margin:1rem;
+    border-radius:1rem;
+}
+/*.content .offers .todaySpecial img:nth-child(6){
+    width:10rem;
+    height:10rem;
+    margin:1rem;
+    margin-left:4rem;
+    border-radius:1rem;
+}*/
+.content .offers .todaySpecial aside{
+    font-size:3rem;
+    background-color:red;
+    padding:1rem;
+    margin-left:4rem;
+    margin-right:2rem;
+    border-radius:1rem 5rem 1rem 5rem;
+    padding-left:5rem;
+    color:white;
+}
+.content .promotions {
+    background-color:white;
+    width:30rem;
+    margin:2rem;
+    padding:1rem;
+}
+.promotions .topic{
+    font-size:2.5rem;
+    background-color:#11e518;
+    padding:1rem;
+    border-radius:1rem;
+    margin:1rem;
+    color:white;
+    font-family:cursive;
+}
+.promotions img{
+    width:25rem;
+    height:12rem;
+    margin-left:2rem;
+}
+.promotions aside{
+    font-size:2rem;
+    padding:.5rem;
+    margin-right:5.5rem;
+    margin-left:2rem;
+    background-color:red;
+    border-radius:1rem;
+    color:white;
+    padding-left:1rem;
+}
+.flex-container .allCustomers{
+    background-color: grey;
+    width: 30rem;
+    height:27rem;
+    margin:1rem;
+    padding:1rem;
+    flex:1 1 25rem;
+    border: 1px solid #2c77ff;
+    border-radius:1rem;
+}
+.flex-container .allItems{
+    background-color: grey;
+    width: 30rem;
+    height:27rem;
+    margin:1rem;
+    padding:1rem;
+    flex:1 1 25rem;
+    border: 1px solid #2c77ff;
+    border-radius:1rem;
+}
+.flex-container .allOrders{
+    background-color: grey;
+    width: 30rem;
+    height:29rem;
+    margin:1rem;
+    padding:1rem;
+    flex:1 1 25rem;
+    border: 1px solid #2c77ff;
+    border-radius:1rem;
+}
+.flex-container .allCustomers img{
+     width:8rem;
+     height:8rem;
+     margin-left:10rem;
+
+}
+.flex-container .allCustomers h1{
+    font-size:5rem;
+    font-family: system-ui;
+    padding-left: 2rem;
+    margin-left:2rem;
+    margin-right:2rem;
+    margin-top:0;
+}
+.flex-container .allCustomers div{
+    font-size:6rem;
+    margin-left:12rem;
+    margin-right:12rem;
+}
+.flex-container .allItems img{
+        width:8rem;
+       height:8rem;
+       margin-left:10rem;
+}
+.flex-container .allItems h1{
+    font-size:5rem;
+    font-family: system-ui;
+    padding-left: 2rem;
+    margin-left:6rem;
+    margin-right:6rem;
+    margin-top:0;
+}
+.flex-container .allItems div{
+    font-size:6rem;
+    margin-left:12rem;
+    margin-right:12rem;
+}
+.flex-container .allOrders img{
+    width:8rem;
+    height:8rem;
+    margin-left:28rem;
+}
+.flex-container .allOrders h1{
+    font-size:5rem;
+    font-family: system-ui;
+    padding-left: 2rem;
+    margin-left:22rem;
+    margin-right:22rem;
+    margin-top:0;
+}
+.flex-container .allOrders div{
+    font-size:6rem;
+    margin-left:28rem;
+    margin-right:28rem;
+}
+/* -------------------------------------------------Customer & Item CSS---------------------------------------------- */
+.customer{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1.5rem;
+    min-height:100vh;
+    align-items:top;
+    background-size:cover;
+    background-position:center;
+    padding-left:5rem;
+}
+
+.item{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1.5rem;
+    min-height:100vh;
+    align-items:top;
+    background-size:cover;
+    background-position:center;
+    padding-left:5rem;
+}
+/* ---------------- */
+.search-container{
+    flex: 1 1 60rem;
+
+}
+
+.form-container{
+    flex: 1 1 60rem;
+    padding-top:1rem;
+}
+
+.table-container{
+   flex: 1 1 60rem;
+
+}
+/* ---------------- */
+.search-container h1{
+    font-size:2rem;
+
+}
+
+.search-container input{
+    width:60rem;
+    height:4rem;
+    border:1px solid blue;
+    border-radius:.5rem;
+    padding-left:.5rem;
+    font-size:1.5rem;
+    margin-top:1rem;
+}
+
+.btnSearch{
+    display:block;
+    font-size:2.5rem;
+    color: blue;
+    border: 1px solid var(--red);
+    border-radius: 1rem;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    margin:1rem 1rem 1rem 46rem;
+    background-color:#b8b8f5;
+}
+
+.btnSearch:hover{
+    color:white;
+    background-color:blue;
+}
+/* ---------------- */
+.form-container h1{
+    font-size: 1.5rem;
+    font-family: cursive;
+    font-weight: bolder;
+    margin-bottom: auto;
+    padding-bottom: 1px;
+}
+
+.form-container input{
+    width:60rem;
+    height:3rem;
+    border:1px solid blue;
+    border-radius:.5rem;
+    padding-left:.5rem;
+    font-size:1rem;
+
+}
+
+.form-container button{
+    display:inline;
+    font-size:2.5rem;
+    border-radius: 1rem;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+}
+
+.btnDelete{
+    color:red;
+    background:#ff9393;
+    margin: 1rem 1rem 1rem 25rem;
+}
+
+.btnDelete:hover{
+    color:white;
+    background-color:red;
+}
+
+.btnSave{
+    color:#0ba90b;
+    background:#85dcb8;
+}
+
+.btnSave:hover{
+    color:white;
+    background-color:green;
+}
+/* ---------------- */
+
+.table{
+    border-collapse: collapse;
+    align-center;
+    font-size: 1.6rem;
+    width: 80vw;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    text-align: center;
+    margin:auto;
+}
+
+.table thead tr{
+   background-color:#42a940;
+   color:white;
+   text-align:center;
+}
+
+.table th,
+.table td{
+   padding:12px 10px;
+   font-family:cursive;
+}
+
+th{
+    border:2px solid white;
+
+}
+
+.table tbody tr{
+   border-bottom:1px solid grey;
+
+}
+
+.table tbody tr:nth-child(even){
+   background-color:#b9b5bc;
+
+}
+
+.table tbody tr:last-of-type{
+   border-bottom:2px solid blue;
+
+}
+
+/*----------------------------------------------Order CSS Editing-----------------------------------------------------*/
+.order{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1.5rem;
+    min-height:100vh;
+    align-items:top;
+    background-size:cover;
+    background-position:center;
+}
+/* ---------------- */
+.order .invoice-details{
+    flex:1 1 10rem;
+    border: 1px solid #2c77ff;
+    border-radius: 0rem 0rem 1rem 1rem;
+    border-top: hidden;
+    margin-right:.4rem;
+    margin-left:.8rem;
+
+}
+
+.order .item-select{
+   flex: 1 1 10rem;
+   border: 1px solid #2c77ff;
+   border-radius: 0rem 0rem 1rem 1rem;
+   border-top: hidden;
+   margin-right:.4rem;
+   margin-left:.4rem;
+
+}
+
+.order .payment-details{
+    flex:1 1 10rem;
+    margin-right:.4rem;
+    margin-left:.4rem;
+
+}
+
+.order .table-details{
+    flex:1 1 50rem;
+}
+/* ---------------- */
+.invoice-details h1{
+   font-size: 2rem;
+   background-color: #2c77ff;
+   color: white;
+   font-family: monospace;
+   padding: 0.7rem;
+   margin-top:0;
+}
+
+.invoice-details h2{
+    font-size: 1.5rem;
+    font-family: cursive;
+    padding-left: 0.5rem;
+   margin-top: .5rem;
+   margin-bottom: .3rem;
+
+}
+
+/*.invoice-details input{
+    width:46rem;
+    border:1px solid blue;
+    border-radius:.5rem;
+    padding:.5rem;
+    font-size:1.4rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}*/
+
+.item-select h1{
+   font-size: 2rem;
+   background-color: #2c77ff;
+   color: white;
+   font-family: monospace;
+   padding: 0.7rem;
+   margin-top:0;
+}
+
+.item-select h2{
+   font-size: 1.5rem;
+   font-family: cursive;
+   padding-left: 0.5rem;
+}
+
+.item-select input{
+    width:42rem;
+    border:1px solid blue;
+    border-radius:.5rem;
+    padding:.5rem;
+    font-size:1.4rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+button{
+    font-size:2rem;
+    border-radius: 1rem;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+}
+#addItem{
+     font-size:2rem;
+     color: green;
+     border: 1px solid green;
+     margin: 2rem 0rem 1rem 33rem;
+     background-color: #c8ecc7;
+}
+#addItem:hover{
+    background-color:green;
+    color:white;
+}
+.payment-details h1{
+    font-size: 2rem;
+    background-color: #2c77ff;
+    color: white;
+    font-family:monospace;
+    padding: 0.7rem;
+    margin-top:0;
+}
+.payment-details h2{
+   font-size: 1.5rem;
+   font-family: cursive;
+   padding-left: 0.5rem;
+   margin:2rem;
+}
+#confirm{
+    font-size:3rem;
+    color: blue;
+    border: 1px solid blue;
+    margin: 4rem 0rem 2rem 28rem;
+    background-color: #c7c7ec;
+}
+#confirm:hover{
+    background-color:blue;
+    color:white;
+}
+
+.table{
+    border-collapse: collapse;
+    align-center;
+    font-size: 1.6rem;
+    width: 80vw;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    text-align: center;
+    margin:auto;
+}
+
+.table thead tr{
+   background-color:#42a940;
+   color:white;
+   text-align:center;
+}
+
+.table th,
+.table td{
+   padding:12px 10px;
+   font-family:cursive;
+}
+
+th{
+    border:2px solid white;
+
+}
+
+.table tbody tr{
+   border-bottom:1px solid grey;
+
+}
+
+.table tbody tr:nth-child(even){
+   background-color:#b9b5bc;
+
+}
+
+.table tbody tr:last-of-type{
+   border-bottom:2px solid blue;
+
+}
+
+#cmbOrderID{
+   font-size: 1.6rem;
+   color: #6302ff;
+   font-family: monospace;
+   padding: 0.3rem;
+   margin: 0rem 8rem 0rem 1rem;
+   background-color: #ffffff;
+   border: 1px solid blue;
+   border-radius: 0.5rem;
+   padding-left: 2rem;
+   font-weight: bolder;
+}
+#txtDate{
+   font-size: 1.6rem;
+   color: #6302ff;
+   font-family: monospace;
+   padding: 0.3rem;
+   margin: 0rem 8rem 0rem 1rem;
+   background-color: #ffffff;
+   border: 1px solid blue;
+   border-radius: 0.5rem;
+   padding-left: 2rem;
+   font-weight: bolder;
+}
+#cusIdDiv{
+    font-size: 1.6rem;
+    color: #6302ff;
+    font-family: monospace;
+    padding: 0.3rem;
+    margin: 0rem 8rem 0rem 1rem;
+    background-color: #ffffff;
+    border: 1px solid blue;
+    border-radius: 0.5rem;
+    padding-left: 2rem;
+    font-weight: bolder;
+}
+#itemCodeDiv{
+    font-size: 1.6rem;
+    color: #6302ff;
+    font-family: monospace;
+    padding: 0.3rem;
+    margin: 0rem 8rem 0rem 1rem;
+    background-color: #ffffff;
+    border: 1px solid blue;
+    border-radius: 0.5rem;
+    padding-left: 2rem;
+    font-weight: bolder;
+}
+#selectedItemCode{
+    padding-left:26rem;
+    color: #6302ff;
+}
+#lblItemName{
+    font-size: 1.6rem;
+    color: #6302ff;
+    font-family: monospace;
+    padding: 0.3rem;
+    margin: 0rem 8rem 0rem 1rem;
+    background-color: #ffffff;
+    border: 1px solid blue;
+    border-radius: 0.5rem;
+    padding-left: 2rem;
+    font-weight: bolder;
+}
+#selectedCusID{
+    padding-left:26rem;
+    color: #6302ff;
+}
+#lblCusName{
+    font-size: 1.6rem;
+    color: #6302ff;
+    font-family: monospace;
+    padding: 0.3rem;
+    margin: 0rem 8rem 2rem 1rem;
+    background-color: #ffffff;
+    border: 1px solid blue;
+    border-radius: 0.5rem;
+    padding-left: 2rem;
+    font-weight: bolder;
+}
+#total{
+    width:20rem;
+    font-size: 1.6rem;
+    color: #6302ff;
+    font-family: monospace;
+    padding: 0.3rem;
+    margin: 0rem 8rem 0rem 1rem;
+    background-color: #ffffff;
+    border: 1px solid blue;
+    border-radius: 0.5rem;
+    padding-left: 2rem;
+    font-weight: bolder;
+}
+#txtCash{
+   width:20rem;
+   font-size: 1.6rem;
+   color: #6302ff;
+   font-family: monospace;
+   padding: 0.3rem;
+   margin-left:1rem;
+   background-color: #ffffff;
+   border: 1px solid blue;
+   border-radius: 0.5rem;
+   padding-left: 2rem;
+   font-weight: bolder;
+}
+#balance{
+   width:20rem;
+   font-size: 1.6rem;
+   color: #6302ff;
+   font-family: monospace;
+   padding: 0.3rem;
+   margin-left:1rem;
+   background-color: #ffffff;
+   border: 1px solid blue;
+   border-radius: 0.5rem;
+   padding-left: 2rem;
+   font-weight: bolder;
+}
+#txtQty{
+    width:40rem;
+}
+
+.search-content{
+    position:absolute;
+    top:11rem;
+    display:flex;
+    gap:1.5rem;
+}
+.search-content h2{
+    margin-left:10px;
+    margin-top:5px;
+}
+.search-content input{
+    width:40rem;
+    border:1px solid blue;
+    border-radius:5px;
+    padding-left:5px;
+}
+.search-content button{
+    background-color:blue;
+    color:white;
+}
+@media(max-width:991px){
+    html{
+        font-size:45%;
+    }
+    header{
+        padding:2rem;
+    }
+    .item-select input{
+        width:50rem;
+        font-size:2.2rem;
+    }
+    .invoice-details input{
+        width:30rem;
+        font-size:2.2rem;
+    }
+    .order h1{
+       font-size:2.5rem;
+    }
+    .order h2{
+       font-size:2rem;
+    }
+    #addItem{
+       font-size:2.8rem;
+       margin-left:45rem;
+    }
+    #confirm{
+        margin-left:45rem;
+    }
+    #selectedCusID{
+        padding-left:46rem;
+        color: #6302ff;
+    }
+    #selectedItemCode{
+            padding-left:46rem;
+            color: #6302ff;
+    }
+    #txtQty{
+        width:60rem;
+    }
+    #total{
+        width:40rem;
+    }
+    #txtCash{
+       width:40rem;
+    }
+    #balance{
+       width:40rem;
+    }
+    #cmbOrderID{
+        width:60rem;
+    }
+    #txtDate{
+            width:60rem;
+    }
+    #cusIdDiv{
+            width:60rem;
+    }
+    #itemCodeDiv{
+    width:60rem;
+    }
+
+    .content .offers .todaySpecial img:nth-child(3){
+        width:45rem;
+        height:25rem;
+        margin-left:2rem;
+    }
+    .content .offers .todaySpecial img:nth-child(4){
+        width:45rem;
+        height:25rem;
+        margin-left:2rem;
+    }
+    .content .offers .todaySpecial img:nth-child(5){
+         width:45rem;
+         height:25rem;
+         margin-left:2rem;
+    }
+
+    .content .offers .todaySpecial h1{
+        font-size:4rem;
+    }
+    .promotions .topic{
+        font-size:4rem;
+        padding:1.5rem;
+        font-family:cursive;
+    }
+    .promotions img{
+        width:40rem;
+        height:20rem;
+        margin:2rem;
+    }
+    .promotions aside{
+         font-size:3rem;
+         margin-right:15rem;
+    }
+    .flex-container .allCustomers img{
+        margin-left:23rem;
+    }
+    .flex-container .allCustomers h1{
+        margin-left:12rem;
+    }
+    .flex-container .allCustomers div{
+        margin-left:23rem;
+    }
+    .flex-container .allItems img{
+         margin-left:22rem;
+    }
+    .flex-container .allItems h1{
+         margin-left:18rem;
+    }
+    .flex-container .allItems div{
+         margin-left:23rem;
+    }
+    .flex-container .allOrders img{
+          margin-left:24rem;
+    }
+    .flex-container .allOrders h1{
+           margin-left:18rem;
+    }
+    .flex-container .allOrders div{
+           margin-left:23rem;
+    }
+
+}
+#logoIMG{
+    width:30px;
+    height:30px;
+}
